@@ -5,9 +5,9 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "n0stalgia";
+const description = "A warm sensation.";
+const baseUri = "ipfs://QmbqqhpzxVgi2o1unSsYM9ZYrkyFBsu73qkCR3UJ5wEwdc";
 
 const solanaMetadata = {
   symbol: "YC",
@@ -24,26 +24,50 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 10,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Backgrounds" },
+      { name: "Top Right" },
+      { name: "Bottom Left" },
+      { name: "Dates" },
+    ],
+  },
+  {
+    growEditionSizeTo: 20,
+    layersOrder: [
+      { name: "Backgrounds" },
+      { name: "Top Left" },
+      { name: "Bottom Right" },
+      { name: "Dates" },
+    ],
+  },
+  {
+    growEditionSizeTo: 25,
+    layersOrder: [
+      { name: "Backgrounds" },
+      { name: "Sides" },
+      { name: "Bottom Right" },
+      { name: "Dates" },
+    ],
+  },
+  {
+    growEditionSizeTo: 30,
+    layersOrder: [
+      { name: "Backgrounds" },
+      { name: "Sides" },
+      { name: "Top Left" },
+      { name: "Dates" },
     ],
   },
 ];
 
-const shuffleLayerConfigurations = false;
+const shuffleLayerConfigurations = true;
 
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 2500,
+  height: 2500,
   smoothing: false,
 };
 
